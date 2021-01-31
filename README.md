@@ -5,7 +5,7 @@ The @fantaptik `Product Tour` library.
 npm install @fantaptik/react-tour
 
 # Peer dependencies
-npm install @popperjs/core react-popper @fantaptik/react-material
+npm install @fantaptik/react-material
 ```
 
 **Important** @fantaptik/react-material also has its own peer dependencies; check the README.md for @fantaptik/react-material.

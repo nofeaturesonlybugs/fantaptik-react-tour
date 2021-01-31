@@ -265,5 +265,5 @@ const steps = [
         content : "Step 3",
     },
 ];
-<Tour title="An Bad Tour" steps={steps} />
+<Tour title="A Better Bad Tour" steps={steps} />
 ```
