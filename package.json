@@ -1,6 +1,6 @@
 {
   "name": "@fantaptik/react-tour",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "@fantaptik React library for product tours.",
   "main": "dist/index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "@fantaptik",
+    "react-tour",
     "react",
     "reactjs",
     "materialize",
