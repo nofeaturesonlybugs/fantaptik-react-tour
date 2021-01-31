@@ -1,0 +1,55 @@
+{
+  "name": "@fantaptik/react-tour",
+  "version": "0.1.0",
+  "description": "@fantaptik React library for product tours.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build-dev": "npx webpack --mode development",
+    "build": "npx webpack --mode production",
+    "styleguidist": "npx styleguidist server",
+    "styleguidist-build": "npx styleguidist build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "@fantaptik",
+    "react",
+    "reactjs",
+    "materialize",
+    "material",
+    "tour",
+    "product-tour",
+    "react-material"
+  ],
+  "author": "Nofeatures Onlybugs",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@fantaptik/react-material": "^0.2.3",
+    "@fantaptik/webpack-config": "^0.2.0",
+    "@popperjs/core": "^2.6.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "materialize-css": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-joyride": "^2.3.0",
+    "react-popper": "^2.2.4",
+    "react-styleguidist": "^11.1.5",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "peerDependencies": {
+    "@fantaptik/react-material": "^0.2.3",
+    "@popperjs/core": "^2.6.0",
+    "materialize-css": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-popper": "^2.2.4"
+  }
+}

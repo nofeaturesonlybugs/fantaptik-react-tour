@@ -1,0 +1,107 @@
+.tour .primary-content.with-overlay {
+    position : relative;
+    isolation : isolate;
+    z-index : 1005;
+}
+
+.tour-overlay {
+    position : fixed;
+    left : 0px;
+    right : 0px;
+    top : 0px;
+    bottom : 0px;
+    background-color : black;
+    opacity : .7;
+    z-index : 1000;
+}
+
+.tour-spotlight {
+    position : absolute;
+    left : 0px;
+    right : 0px;
+    top : 0px;
+    bottom : 0px;
+    mix-blend-mode : hard-light;
+    z-index : 1006;
+}
+
+.tour-controls {
+    /* position=relative is required to allow controls through the overlay when there is no primary-content. */
+    position : relative;
+    background: #333;
+    color: white;
+    border-radius: 12px;
+    z-index : 1006;
+}
+
+/* Set padding for header, footer, and step-content */
+.tour-controls .header,
+.tour-controls .footer {
+    padding : 12px;
+}
+.tour-controls .step-content {
+    padding: 24px;
+}
+/* Change paddings when .small is added */
+.tour-controls.small .header,
+.tour-controls.small .footer {
+    padding : 6px;
+}
+.tour-controls.small .step-content {
+    padding: 12px;
+}
+/* These two paddings are always 0 */
+.tour-controls .header {
+    padding-bottom : 0px;
+}
+.tour-controls .footer {
+    padding-top : 0px;
+}
+
+.tour-controls .header h5 {
+    margin : 0;
+}
+
+.tour-controls.small .header h5 {
+    font-size : 1.4rem;
+}
+
+
+.tour-controls.small .header,
+.tour-controls.small .footer {
+    padding : 6px;
+}
+
+.tour-controls .clear {
+    clear : both;
+}
+
+.tour-controls .arrow,
+.tour-controls .arrow::before {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  z-index: -1;
+}
+
+.tour-controls .arrow::before {
+  content: '';
+  transform: rotate(45deg);
+  background: #333;
+}
+
+.tour-controls[data-popper-placement^='top'] > .arrow {
+    bottom: -9px;
+}
+
+.tour-controls[data-popper-placement^='bottom'] > .arrow {
+    top: -9px;
+}
+
+.tour-controls[data-popper-placement^='left'] > .arrow {
+    right: -9px;
+}
+
+.tour-controls[data-popper-placement^='right'] > .arrow {
+    left: -9px;
+}
